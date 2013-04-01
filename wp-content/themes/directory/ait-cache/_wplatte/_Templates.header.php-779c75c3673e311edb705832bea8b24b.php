@@ -1,8 +1,8 @@
-<?php //netteCache[01]000476a:2:{s:4:"time";s:21:"0.36851200 1364843416";s:9:"callbacks";a:3:{i:0;a:3:{i:0;a:2:{i:0;s:6:"NCache";i:1;s:9:"checkFile";}i:1;s:87:"C:\Program Files (x86)\Ampps\www\ipkon\wp-content\themes\directory\Templates\header.php";i:2;i:1363042312;}i:1;a:3:{i:0;a:2:{i:0;s:6:"NCache";i:1;s:10:"checkConst";}i:1;s:20:"NFramework::REVISION";i:2;s:30:"eee17d5 released on 2011-08-13";}i:2;a:3:{i:0;a:2:{i:0;s:6:"NCache";i:1;s:10:"checkConst";}i:1;s:21:"WPLATTE_CACHE_VERSION";i:2;i:4;}}}?><?php
+<?php //netteCache[01]000476a:2:{s:4:"time";s:21:"0.66183900 1364854746";s:9:"callbacks";a:3:{i:0;a:3:{i:0;a:2:{i:0;s:6:"NCache";i:1;s:9:"checkFile";}i:1;s:87:"C:\Program Files (x86)\Ampps\www\ipkon\wp-content\themes\directory\Templates\header.php";i:2;i:1364854244;}i:1;a:3:{i:0;a:2:{i:0;s:6:"NCache";i:1;s:10:"checkConst";}i:1;s:20:"NFramework::REVISION";i:2;s:30:"eee17d5 released on 2011-08-13";}i:2;a:3:{i:0;a:2:{i:0;s:6:"NCache";i:1;s:10:"checkConst";}i:1;s:21:"WPLATTE_CACHE_VERSION";i:2;i:4;}}}?><?php
 
 // source file: C:\Program Files (x86)\Ampps\www\ipkon\wp-content\themes\directory\Templates\header.php
 
-?><?php list($_l, $_g) = NCoreMacros::initRuntime($template, 'e3bsn24cqz')
+?><?php list($_l, $_g) = NCoreMacros::initRuntime($template, 'e66vlq3ejo')
 ;
 // snippets support
 if (!empty($control->snippetMode)) {
@@ -185,8 +185,8 @@ error<?php else: ?>info<?php endif ?>">
                     <div id="tagLineHolder">
                         <div class="defaultContentWidth clearfix">
                             <p class="left info"><?php echo NTemplateHelpers::escapeHtml($themeOptions->general->topBarContact, ENT_NOQUOTES) ?></p>
-<?php NCoreMacros::includeTemplate('snippets/social-icons.php', $template->getParams(), $_l->templates['e3bsn24cqz'])->render() ;NCoreMacros::includeTemplate('snippets/wpml-flags.php', $template->getParams(), $_l->templates['e3bsn24cqz'])->render() ?>
-                            <!-- <?php NCoreMacros::includeTemplate('snippets/search-form.php', $template->getParams(), $_l->templates['e3bsn24cqz'])->render() ?> -->
+<?php NCoreMacros::includeTemplate('snippets/social-icons.php', $template->getParams(), $_l->templates['e66vlq3ejo'])->render() ;NCoreMacros::includeTemplate('snippets/wpml-flags.php', $template->getParams(), $_l->templates['e66vlq3ejo'])->render() ?>
+                            <!-- <?php NCoreMacros::includeTemplate('snippets/search-form.php', $template->getParams(), $_l->templates['e66vlq3ejo'])->render() ?> -->
                         </div>
                     </div>
 <?php endif ?>
@@ -221,7 +221,7 @@ true<?php else: ?>false<?php endif ?>">
 <?php if ($headerType == 'slider'): if (function_exists('putRevSlider')): putRevSlider($headerSlider) ;endif ;endif ?>
             </div>
 
-<?php if (isset($isDirSingle)): NCoreMacros::includeTemplate('snippets/map-single-javascript.php', $template->getParams(), $_l->templates['e3bsn24cqz'])->render() ;else: if ($headerType == 'map'): NCoreMacros::includeTemplate('snippets/map-javascript.php', $template->getParams(), $_l->templates['e3bsn24cqz'])->render() ;endif ;endif ?>
+<?php if (isset($isDirSingle)): NCoreMacros::includeTemplate('snippets/map-single-javascript.php', $template->getParams(), $_l->templates['e66vlq3ejo'])->render() ;else: if ($headerType == 'map'): NCoreMacros::includeTemplate('snippets/map-javascript.php', $template->getParams(), $_l->templates['e66vlq3ejo'])->render() ;endif ;endif ?>
 
             <div id="directory-search" data-interactive="<?php if (isset($themeOptions->search->enableInteractiveSearch)): ?>
 yes<?php else: ?>no<?php endif ?>">
@@ -229,7 +229,7 @@ yes<?php else: ?>no<?php endif ?>">
                     <form action="<?php echo htmlSpecialChars($homeUrl) ?>" id="dir-search-form" method="get" class="dir-searchform">
                         <div id="dir-search-inputs">
                             <div id="dir-holder">
-                                <input type="text" name="s" id="dir-searchinput-text" placeholder="<?php echo htmlSpecialChars(__('Search keyword...', 'ait')) ?>
+                                <input type="text" name="s" id="dir-searchinput-text" placeholder="<?php echo htmlSpecialChars(__('Palabra a buscar...', 'ait')) ?>
 " class="dir-searchinput"<?php if (isset($isDirSearch)): ?> value="<?php echo htmlSpecialChars($site->searchQuery) ?>
 "<?php endif ?> />
                                 
@@ -261,10 +261,10 @@ yes<?php else: ?>no<?php endif ?>">
                                 <input type="hidden" name="geo-lng" id="dir-searchinput-geo-lng" value="0" />
 <?php endif ?>
                                 
-                                <input type="text" id="dir-searchinput-category" placeholder="<?php echo htmlSpecialChars(__('All categories', 'ait')) ?>" />
+                                <input type="text" id="dir-searchinput-category" placeholder="<?php echo htmlSpecialChars(__('Todas las categorías', 'ait')) ?>" />
                                 <input type="text" name="categories" id="dir-searchinput-category-id" value="0" style="display: none;" />
                                 
-                                <input type="text" id="dir-searchinput-location" placeholder="<?php echo htmlSpecialChars(__('All locations', 'ait')) ?>" />
+                                <input type="text" id="dir-searchinput-location" placeholder="<?php echo htmlSpecialChars(__('Todas las localizaciones', 'ait')) ?>" />
                                 <input type="text" name="locations" id="dir-searchinput-location-id" value="0" style="display: none;" />
 
                                 <div class="reset-ajax"></div>
@@ -274,7 +274,7 @@ yes<?php else: ?>no<?php endif ?>">
                         
 <?php endif ?>
                         <div id="dir-search-button">
-                            <input type="submit" value="<?php echo htmlSpecialChars(__('Search', 'ait')) ?>" class="dir-searchsubmit" />
+                            <input type="submit" value="<?php echo htmlSpecialChars(__('Buscar', 'ait')) ?>" class="dir-searchsubmit" />
                         </div>
                         <input type="hidden" name="dir-search" value="yes" />
                         <input type="hidden" name="post_type" value="ait-dir-item" />
